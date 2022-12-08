@@ -1,8 +1,8 @@
-package com.codewithmo.Stack;
+package com.codewithmo._01.Stack;
 
 import java.util.Stack;
 
-public class S1 {
+public class _Stack {
     public static void main(String[] args) {
 
         // *****************************************************

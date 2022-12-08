@@ -1,4 +1,4 @@
-package com.codewithmo.Queue;
+package com.codewithmo._02.Queue;
 
 import java.util.Collections;
 import java.util.PriorityQueue;

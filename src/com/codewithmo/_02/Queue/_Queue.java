@@ -1,9 +1,9 @@
-package com.codewithmo.Queue;
+package com.codewithmo._02.Queue;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Q1 {
+public class _Queue {
     public static void main(String[] args) {
 
         // *****************************************************
