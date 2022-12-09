@@ -19,18 +19,39 @@ public class SelectionSort {
         }
     }
 
+//    private static void selectionSort(int[] array) {
+//
+//        for(int i = 0; i < array.length - 1; i++) {
+//            int min = i;
+//            for(int j = i + 1; j < array.length; j++) {
+//                if(array[min] > array[j]) {
+//                    min = j;
+//                }
+//            }
+//
+//            int temp = array[i];
+//            array[i] = array[min];
+//            array[min] = temp;
+//        }
+//
+//    }
+
+
     private static void selectionSort(int[] array) {
 
-        for(int i = 0; i < array.length - 1; i++) {
-            int min = i;
-            for(int j = i + 1; j < array.length; j++) {
-                if(array[min] > array[j]) {
-                    min = j;
+        int firstElement;
+        int secondElement;
+
+        for(firstElement = 0; firstElement < array.length - 1; firstElement++) {
+            int min = firstElement;
+            for(secondElement = firstElement + 1; secondElement < array.length; secondElement++) {
+                if(array[min] < array[secondElement]) {
+                    min = secondElement;
                 }
             }
 
-            int temp = array[i];
-            array[i] = array[min];
+            int temp = array[firstElement];
+            array[firstElement] = array[min];
             array[min] = temp;
         }
 
