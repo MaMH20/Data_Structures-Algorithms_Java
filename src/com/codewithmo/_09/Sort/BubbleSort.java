@@ -20,14 +20,31 @@ public class BubbleSort {
         }
     }
 
+//    public static void bubbleSort(int array[]) {
+//
+//        for(int i = 0; i < array.length - 1; i++) {
+//            for(int j = 0; j < array.length - i - 1; j++) {
+//                if(array[j] > array[j+1]) {
+//                    int temp = array[j];
+//                    array[j] = array[j+1];
+//                    array[j+1] = temp;
+//                }
+//            }
+//        }
+//    }
+
+
     public static void bubbleSort(int array[]) {
 
-        for(int i = 0; i < array.length - 1; i++) {
-            for(int j = 0; j < array.length - i - 1; j++) {
-                if(array[j] > array[j+1]) {
-                    int temp = array[j];
-                    array[j] = array[j+1];
-                    array[j+1] = temp;
+        int firstElement;
+        int secondElement;
+
+        for(firstElement= 0; firstElement < array.length - 1; firstElement++) {
+            for(secondElement= 0; secondElement < array.length - firstElement - 1; secondElement++) {
+                if(array[secondElement] > array[secondElement+1]) {
+                    int temp = array[secondElement];
+                    array[secondElement] = array[secondElement+1];
+                    array[secondElement+1] = temp;
                 }
             }
         }
